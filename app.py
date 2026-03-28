@@ -1,12 +1,13 @@
 import streamlit as st
 import sqlite3
 import numpy as np
-import pickle
+
 import plotly.graph_objects as go
 
 # ---------------- LOAD MODEL ----------------
 
-model = pickle.load(open("model.pkl", "rb"))
+import joblib
+model = joblib.load("model.pkl")
 
 # ---------------- DATABASE ----------------
 conn = sqlite3.connect("patients.db")

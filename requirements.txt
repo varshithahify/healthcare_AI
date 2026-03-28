@@ -1,3 +1,7 @@
 streamlit
 numpy
 plotly
+pandas
+scikit-learn
+joblib
+
